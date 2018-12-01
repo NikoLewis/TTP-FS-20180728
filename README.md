@@ -1,44 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# stock_portfolio_app
 
-## Available Scripts
+web  based  stock  portfolio  app, for the  purpose  of  this  exercise  a  stock  is  simply  an  asset  that  can  be  bought  or  sold(like  a  house)  at  a  price  that  continuously  rises  and  falls  throughout  the  day.  Up  todate  pricing  information aquirred from IEX  API. 
 
-In the project directory, you can run:
+##Heroku Deployment
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##How to Run App Locally
+ 1. clone repo
+ 2.  use terminal to cd inside repo then use script ### `npm start` to run app in  development mode.
+ 3. Open [http://localhost:3000](http://localhost:3000) to view app in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+##Technologies Used
+JavaScript
+React.js
+React Router
+Psql
+Axios
+Express
+Flexbox
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Wire Frames:
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## User Stories:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+*1.*  As  a  user  I  want  to  create  a  new  account  with  my  name,  email,  and  password  sothat  I  can  buy  and  trade  stocks.Default  the  user’s  cash  account  balance  to  $5000.00  USD.A  user  can  only  register  once  with  any  given  email.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*2.*  As  a  user  I  want  to  authenticate  via  email  and  password  so  that  I  can  access  myaccount.
 
-### `npm run eject`
+*3.*  As  a  user  I  want  to  buy  shares  of  stock  at  its  current  price  by  specifying  itsticker  symbol  and  number  of  shares  so  that  I  can  invest.A  user  can  only  buy  whole  number  quantities  of  shares.A  user  can  only  buy  shares  if  they  have  enough  cash  in  their  account  for  agiven  purchase.A  user  can  only  buy  shares  if  the  ticker  symbol  is  valid.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+*4.*  As  a  user  I  want  to  view  a  list  of  all  transactions  I’ve  made  to  date(trades)  so  thatI  can  perform  an  audit.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+*5.*  As  a  user  I  want  to  view  a  list  of  all  the  stocks  I  own  along  with  their  currentvalues  so  that  I  can  review  performance.Current  values  should  be  based  on  the  latest  price  and  quantity  owned  for  agiven  stock.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+*6.*  As  a  user  I’d  like  to  see  the  font  color  of  stock  symbols  and  current  prices  in  myportfolio  change  dynamically  to  indicate  performance.Display  red  when  the  current  price  is  less  than  the  day’s  open  price.Display  grey  when  the  current  price  is  equal  to  the  day’s  open  price.Display  green  when  the  current  price  is  greater  than  the  day’s  open  price.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
